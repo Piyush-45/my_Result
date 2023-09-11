@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Results</title>
+</head>
+<style>
+    body {
+        background-image: url(./bg\ final.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        height: 80vh;
+        margin: 2rem auto;
+        width: fit-content;
+        /* width: 400px; */
+        background: #FFFFFF;
+        box-shadow: 8px 14px 5px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        padding-top: 2rem;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.3rem;
+        word-wrap: break-word;
+        width: 90%;
+        margin-inline: auto;
+
+    }
+
+    button {
+        margin: 3rem auto;
+    width: 160px;
+    height: 40px;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 160px;
+    height: 50px;
+    background-color: #77120c;
+    font-family: SourceSansPro-SemiBold;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="logo"><img src="aktu logo.png" alt=""></div>
+        <h1>AKTU College Results 2023</h1>
+        <p>Welcome to the college results page. Click the buttons below to access your results.</p>
+
+        <button onclick="openResultLink('https://drive.google.com/file/d/1UZL7Zv9NKRGJs58cSwHhMKa5QZx0KbBr/view?usp=sharing')">1st Year Result</button>
+        <button onclick="openResultLink('https://drive.google.com/file/d/1eNJGDjL_iMrZCPoyDk1uf8_aeZXTt-qS/view?usp=sharing')"> 2nd Year Result</button>
+    </div>
+
+    <script>
+        function openResultLink(link) {
+            window.location.href = link;
+        }
+    </script> 
+</body>
+
+</html>
