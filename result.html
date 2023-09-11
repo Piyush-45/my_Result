@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Results</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <style>
     body {
@@ -15,7 +16,7 @@
     }
 
     .main {
-        height: 80vh;
+        /* height: 80vh; */
         margin: 2rem auto;
         width: fit-content;
         /* width: 400px; */
@@ -26,6 +27,7 @@
         align-items: center;
         gap: 1.2rem;
         padding-top: 2rem;
+
 
     }
 
@@ -43,18 +45,18 @@
 
     button {
         margin: 3rem auto;
-    width: 160px;
-    height: 40px;
-    align-items: center;
-    padding: 0 20px;
-    min-width: 160px;
-    height: 50px;
-    background-color: #77120c;
-    font-family: SourceSansPro-SemiBold;
-    font-size: 14px;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+        width: 160px;
+        height: 40px;
+        align-items: center;
+        padding: 0 20px;
+        min-width: 160px;
+        height: 50px;
+        background-color: #77120c;
+        font-family: SourceSansPro-SemiBold;
+        font-size: 14px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
     }
 </style>
 
@@ -64,15 +66,37 @@
         <h1>AKTU College Results 2023</h1>
         <p>Welcome to the college results page. Click the buttons below to access your results.</p>
 
-        <button onclick="openResultLink('https://drive.google.com/file/d/1UZL7Zv9NKRGJs58cSwHhMKa5QZx0KbBr/view?usp=sharing')">1st Year Result</button>
-        <button onclick="openResultLink('https://drive.google.com/file/d/1eNJGDjL_iMrZCPoyDk1uf8_aeZXTt-qS/view?usp=sharing')"> 2nd Year Result</button>
+        <div class="name"
+            style="display: flex; width: 100%;padding: 1rem; flex-direction: row; align-items: center; justify-content: space-between;">
+            <div class="name_half">
+                <h2><span style="color: #77120c;" >Name:</span> Piyush Tyagi</h2>
+                <h2><span style="color: #77120c;" >DOB:</span> 2003-07-06</h2>
+                <h2><span style="color: #77120c;" >Adress:</span> Noor Nagar Sihani, Ghaziabad</h2>
+                <h2><span style="color: #77120c;" >Roll No:</span> 2100290110112</h2>
+                <h2><span style="color: #77120c; margin-right: 0.5rem;">Father's Name:</span>Mr.Umesh Tyagi</h2>
+                <h2><span style="color: #77120c; margin-right: 0.5rem;">Institue's Name:</span>KIET Group Of Institutions</h2>
+
+            </div>
+            <div class="img">
+                <img src="WhatsApp Image 2023-09-11 at 13.05.50.jpg" style="width: 8rem;" alt="">
+            </div>
+        </div>
+        
+        <div class="buttons" style="display: flex; align-items: center; justify-content: space-around; gap: 2rem;">
+            <button
+            onclick="openResultLink('https://drive.google.com/file/d/1UZL7Zv9NKRGJs58cSwHhMKa5QZx0KbBr/view?usp=sharing')">1st
+            Year Result</button>
+        <button
+            onclick="openResultLink('https://drive.google.com/file/d/1eNJGDjL_iMrZCPoyDk1uf8_aeZXTt-qS/view?usp=sharing')">
+            2nd Year Result</button>
+        </div>
     </div>
 
     <script>
         function openResultLink(link) {
-            window.location.href = link;
+            window.open(link, '_blank')
         }
-    </script> 
+    </script>
 </body>
 
 </html>
